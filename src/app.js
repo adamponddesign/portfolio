@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import './style.scss'
 
 import Footer from './components/Footer'
-
+import Icons from './components/Icons'
 
 class App extends React.Component {
   render() {
@@ -11,6 +11,7 @@ class App extends React.Component {
 
       <main>
         <h1>Adam Pond Portfolio!</h1>
+        <Icons />
         <Footer />
       </main>
 
