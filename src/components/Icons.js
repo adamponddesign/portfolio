@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faReact, faJs, faPython, faHtml5, faCss3Alt, faSass, faNodeJs, faGithub} from '@fortawesome/free-brands-svg-icons'
 import { faDatabase } from '@fortawesome/free-solid-svg-icons'
 
-class Footer extends React.Component {
+class Icons extends React.Component {
   render() {
     return (
       <ul className="tech-list">
@@ -32,4 +32,4 @@ class Footer extends React.Component {
   }
 }
 
-export default Footer
+export default Icons
