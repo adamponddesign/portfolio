@@ -7,14 +7,67 @@ class Contact extends React.Component {
   render() {
     return (
 
-      <div className="contact-section">
-        <img id="profile-pic" src="https://i.imgur.com/0PzSK1U.jpg?1" title="Profile Image" />
-        <p><FontAwesomeIcon icon={faEnvelope} color="white" /><a href="mailto:adam@adampond.co.uk" target="_blank" rel="noopener noreferrer">adam@adampond.co.uk</a></p>
-        <p><FontAwesomeIcon icon={faGithub} color="white" /><a href="https://github.com/adamponddesign" target="_blank" rel="noopener noreferrer">github.com/adamponddesign</a></p>
-        <p><FontAwesomeIcon icon={faLinkedin} color="white" /><a href="https://www.linkedin.com/in/adam-pond/" target="_blank" rel="noopener noreferrer">linkedin.com/in/adam-pond/</a></p>
+      <div className="contact-section section">
+        <div className="container">
+          <h2>Contact</h2>
+          <div className="columns is-vcentered has-text-centered" >
+            <div className="column">
+              <ul className="contact-list">
+                <li>
+                  <a href="mailto:adam@adampond.co.uk" target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faEnvelope} />
+                    <span className="tech-icons">adam@adampond.co.uk</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/adamponddesign" target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faGithub} />
+                    <span className="tech-icons">github.com/adamponddesign</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/adam-pond/" target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faLinkedin} />
+                    <span className="tech-icons">linkedin.com/in/adam-pond/</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="column">
+              <img id="profile-pic" src="https://i.imgur.com/0PzSK1U.jpg?1" title="Profile Image" />
+            </div>
+          </div>
+        </div>
       </div>
     )
   }
 }
 
 export default Contact
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <a href="mailto:adam@adampond.co.uk" target="_blank" rel="noopener noreferrer">
+// <FontAwesomeIcon icon={faEnvelope}  />
+// <span className="tech-icons">adam@adampond.co.uk</span>
+// </a>
+// <p>
+// <FontAwesomeIcon icon={faGithub}  />
+// <a href="https://github.com/adamponddesign" target="_blank" rel="noopener noreferrer">github.com/adamponddesign</a>
+// </p>
+// <p>
+// <FontAwesomeIcon icon={faLinkedin}  />
+// <a href="https://www.linkedin.com/in/adam-pond/" target="_blank" rel="noopener noreferrer">linkedin.com/in/adam-pond/</a>
+// </p>
