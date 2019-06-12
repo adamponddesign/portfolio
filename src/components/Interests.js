@@ -5,7 +5,7 @@ import { faDumbbell, faPaw, faMusic, faFutbol } from '@fortawesome/free-solid-sv
 class Interests extends React.Component {
   render() {
     return (
-      <div className="section interests-section">
+      <div id="interests" className="section interests-section">
         <div className="container">
           <h2>Other Interests</h2>
           <div className="interests-list columns">

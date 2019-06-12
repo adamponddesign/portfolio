@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap');
+$navHeight: 45px;
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 main {
@@ -26,11 +31,90 @@ h3 {
   font-size: 20px;
 }
 
-a {
-  text-decoration: none;
-  &:visited {
+a.contact-icons:visited  {
     color: #4a4a4a;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+.skip {
+  display: none;
+}
+
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: $navHeight;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  background-color: #3a3f41;
+  background-color: maroon;
+  transition: transform 0.8s;
+
+
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+
+  a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 10px;
+    margin: 0;
+
+  }
+  a:hover{
+
+    background-color: white;
+    color: black;
+
+  }
+
+  .nav-logo {
+    margin: 10px;
+    font-size: 24px;
+
+    a {
+      color: white;
+      &:hover {
+        color: blue;
+      }
+    }
+
+  }
+
+  ul {
+    padding-right: 15px;
+    margin: 0;
+    li {
+      display: inline;
+      // margin: 10px;
+
+    }
+  }
+}
+
+
+
+
+
+
+
+.footer {
+  padding: 2rem 1.5rem 2rem;
 }
 
 
@@ -83,11 +167,6 @@ a {
 
 
 
-#profile-pic {
-  height: 200px;
-  border-radius: 100%;
-  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.09);
-}
 
 
 .contact-list {
@@ -125,9 +204,17 @@ a {
       }
 }
 
+#profile-pic {
+  height: 200px;
+  border-radius: 100%;
+  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.09);
+}
+
 #ga-logo {
   width: 200px;
+  margin-top: 25px;
 }
+
 #treble-clef {
   width: 20px;
 }
@@ -151,21 +238,101 @@ div.interests-list {
   font-size: 17px;
 }
 
-    // &.interests-icons {
-    // font-size: 17px;
-    // margin-top: 22px;
-    // }
 
-    // div {
-    //   display: flex;
-    //   flex-direction: column;
-    //   // height: 120px;
-    //   color: white;
-    //   padding: 6px;
-    //   // width: 25%;
-    //   border-radius: 4px;
-    //   margin: 4px;
-    //   text-align: center;
-    //   align-items: center;
-    //   font-size: 42px;
-    // }
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 575px) {
+  // MOBILE
+  .projectTitle__mobile {
+    display: inline;
+  }
+  .projectTitle {
+    display: none;
+  }
+
+  .columns {
+    display: block;
+
+  }
+
+  .column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .project {
+      margin-bottom: 60px;
+
+    .project-links{
+      flex-direction: column;
+    }
+  }
+
+  .skip {
+    display: block;
+    margin: 10px;
+    &:hover {
+      background-color: maroon;
+    }
+  }
+
+  $navHeight: 60px;
+
+  nav {
+    height: $navHeight;
+  }
+  /* Give the .nav ul a height when it's been opened, i.e. make it show */
+  nav.open {
+    ul {
+      max-height: 30em;
+    }
+    i {
+      transform: rotate(180deg);
+    }
+  }
+
+  /* Hide and position the closed .nav ul */
+  nav ul {
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: $navHeight;
+    transition: max-height 0.25s ease-out;
+    padding: 0;
+    width: 100%;
+  }
+
+  /* Style the list items to appear under the menu link */
+  nav ul li {
+    text-align: right;
+    display: block;
+  }
+
+  nav li a {
+    padding: 0.5em;
+    display: block;
+    background-color: maroon;
+    font-size: 22px;
+
+    &:hover {
+      background-color: is-one-quarter-desktop;
+    }
+  }
+
+  .minimised {
+    transform: translateY(0);
+  }
+
+
+}
