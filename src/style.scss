@@ -22,6 +22,9 @@ h1 {
 h2 {
   font-size: 30px;
 }
+h3 {
+  font-size: 20px;
+}
 
 a {
   text-decoration: none;
@@ -65,9 +68,20 @@ a {
 }
 
 
-.contact-section {
-  border-top: 2px solid #fafafa;
+// .contact-section {
+//   border-top: 2px solid #fafafa;
+// }
+
+.tech-icons-section {
+  background-color: #fafafa;
 }
+
+.interests-section {
+  background-color: maroon;
+  color: white;
+}
+
+
 
 #profile-pic {
   height: 200px;
@@ -82,6 +96,7 @@ a {
   padding: 20px;
   justify-content: center;
 
+
     .tech-icons {
     font-size: 17px;
     margin-left: 10px;
@@ -90,7 +105,13 @@ a {
     a {
       display: flex;
       align-items: center;
-      // margin-left: 35px;
+      &.mail-icon {
+        font-size: 38px;
+      }
+
+      &:hover {
+        color: maroon;
+      }
     }
 
     li {
@@ -99,5 +120,52 @@ a {
       border-radius: 4px;
       margin: 4px;
       font-size: 42px;
-    }
+
+
+      }
 }
+
+#ga-logo {
+  width: 200px;
+}
+#treble-clef {
+  width: 20px;
+}
+
+
+
+
+div.interests-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.interests-list div {
+  font-size: 42px;
+  text-align: center;
+}
+
+.interests-icons {
+  font-size: 17px;
+}
+
+    // &.interests-icons {
+    // font-size: 17px;
+    // margin-top: 22px;
+    // }
+
+    // div {
+    //   display: flex;
+    //   flex-direction: column;
+    //   // height: 120px;
+    //   color: white;
+    //   padding: 6px;
+    //   // width: 25%;
+    //   border-radius: 4px;
+    //   margin: 4px;
+    //   text-align: center;
+    //   align-items: center;
+    //   font-size: 42px;
+    // }

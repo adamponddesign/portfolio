@@ -6,7 +6,7 @@ import { faDatabase } from '@fortawesome/free-solid-svg-icons'
 class TechIcons extends React.Component {
   render() {
     return (
-      <div className="section">
+      <div className="section tech-icons-section">
         <div className="container">
           <ul className="tech-list">
 

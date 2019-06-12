@@ -14,7 +14,7 @@ class Contact extends React.Component {
             <div className="column">
               <ul className="contact-list">
                 <li>
-                  <a href="mailto:adam@adampond.co.uk" target="_blank" rel="noopener noreferrer">
+                  <a href="mailto:adam@adampond.co.uk" target="_blank" rel="noopener noreferrer" className="mail-icon">
                     <FontAwesomeIcon icon={faEnvelope} />
                     <span className="tech-icons">adam@adampond.co.uk</span>
                   </a>
@@ -33,7 +33,7 @@ class Contact extends React.Component {
                 </li>
               </ul>
             </div>
-            <div className="column">
+            <div className="column is-hidden-mobile">
               <img id="profile-pic" src="https://i.imgur.com/0PzSK1U.jpg?1" title="Profile Image" />
             </div>
           </div>
@@ -44,30 +44,3 @@ class Contact extends React.Component {
 }
 
 export default Contact
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// <a href="mailto:adam@adampond.co.uk" target="_blank" rel="noopener noreferrer">
-// <FontAwesomeIcon icon={faEnvelope}  />
-// <span className="tech-icons">adam@adampond.co.uk</span>
-// </a>
-// <p>
-// <FontAwesomeIcon icon={faGithub}  />
-// <a href="https://github.com/adamponddesign" target="_blank" rel="noopener noreferrer">github.com/adamponddesign</a>
-// </p>
-// <p>
-// <FontAwesomeIcon icon={faLinkedin}  />
-// <a href="https://www.linkedin.com/in/adam-pond/" target="_blank" rel="noopener noreferrer">linkedin.com/in/adam-pond/</a>
-// </p>
