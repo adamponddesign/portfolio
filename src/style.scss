@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap');
 $navHeight: 45px;
+$mainColor: #4a4a4a;
+$trimColor: lawngreen;
 
 * {
   box-sizing: border-box;
@@ -60,9 +62,9 @@ nav {
   justify-content: space-between;
   align-items: center;
   z-index: 10;
-  background-color: #3a3f41;
-  background-color: maroon;
+  background-color: $mainColor;
   transition: transform 0.8s;
+  border-bottom: 2px solid $trimColor;
 
 
   -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
@@ -152,18 +154,21 @@ nav {
 }
 
 
-// .contact-section {
-//   border-top: 2px solid #fafafa;
-// }
+.contact-section {
+  border-bottom: 2px solid $trimColor;
+}
 
 .tech-icons-section {
   background-color: #fafafa;
+
 }
 
 .interests-section {
-  background-color: maroon;
+  background-color: $mainColor;
   color: white;
+
 }
+
 
 
 
@@ -189,7 +194,7 @@ nav {
       }
 
       &:hover {
-        color: maroon;
+        color: $mainColor;
       }
     }
 
@@ -282,7 +287,7 @@ div.interests-list {
     display: block;
     margin: 10px;
     &:hover {
-      background-color: maroon;
+      background-color: $mainColor;
     }
   }
 
@@ -322,7 +327,7 @@ div.interests-list {
   nav li a {
     padding: 0.5em;
     display: block;
-    background-color: maroon;
+    background-color: $mainColor;
     font-size: 22px;
 
     &:hover {
