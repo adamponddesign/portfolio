@@ -1,15 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import 'animate.css/animate.min.css'
 import 'bulma'
 import './style.scss'
 
 import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import TechIcons from './components/TechIcons'
-import Contact from './components/Contact'
-import Experience from './components/Experience'
-import Interests from './components/Interests'
 import Home from './components/Home'
+import Experience from './components/Experience'
+import TechIcons from './components/TechIcons'
+import Projects from './components/Projects'
+import Interests from './components/Interests'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 class App extends React.Component {
   render() {
@@ -20,6 +22,7 @@ class App extends React.Component {
         <Home />
         <Experience />
         <TechIcons />
+        <Projects />
         <Interests />
         <Contact />
         <Footer />

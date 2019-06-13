@@ -9,7 +9,6 @@ class Navbar extends React.Component {
 
     this.state = { active: false }
 
-
     this.toggleActive = this.toggleActive.bind(this)
   }
 
@@ -36,6 +35,7 @@ class Navbar extends React.Component {
 
         <ul id="menu">
           <li onClick={this.toggleActive}><a href="#experience">Experience</a></li>
+          <li onClick={this.toggleActive}><a href="#projects">Projects</a></li>
           <li onClick={this.toggleActive}><a href="#interests">Interests</a></li>
           <li onClick={this.toggleActive}><a href="#contact">Contact</a></li>
         </ul>
