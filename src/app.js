@@ -4,6 +4,7 @@ import 'animate.css/animate.min.css'
 import 'bulma'
 import './style.scss'
 
+
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Experience from './components/Experience'

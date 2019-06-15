@@ -1,15 +1,54 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import ScrollAnimation from 'react-animate-on-scroll'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faLink } from '@fortawesome/free-solid-svg-icons'
+
 
 class Projects extends React.Component {
+
+
+
+
   render() {
     return (
       <div id="projects" className="section projects-section">
         <div className="container">
           <h2>Projects</h2>
+          {/* Progress Pro */}
+          <div className="columns is-vcentered has-text-centered" >
+            <div className="column is-two-thirds">
+              <ScrollAnimation animateIn="fadeInLeft">
+                <img className="apple-items" src="https://i.imgur.com/VLsgXHL.png" />
+              </ScrollAnimation>
+            </div>
+            <div className="column">
+              <ScrollAnimation animateIn="fadeInRight">
+                <h2>Progress Pro</h2>
+                <p className="project-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec et odio pellentesque diam. Pharetra sit amet aliquam id diam maecenas ultricies mi.</p>
+
+
+                <a className="button" href="https://github.com/adamponddesign/progress-pro" target="_blank" rel="noopener noreferrer" >
+                  <FontAwesomeIcon icon={faGithub} />
+                  <span>View on GitHub</span>
+                </a>
+                <a className="button" href="https://progress-pro.herokuapp.com/#/" target="_blank" rel="noopener noreferrer" >
+                  <FontAwesomeIcon icon={faLink} />
+                  <span>View live Site</span>
+                </a>
+              </ScrollAnimation>
+            </div>
+          </div>
+          <hr />
 
 
 
-          <img className="imac-image" src="https://i.imgur.com/4X4K5mo.png" />
+
+
+
+
+
+
 
 
         </div>
