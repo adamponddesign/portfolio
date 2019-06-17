@@ -1,45 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap');
 $navHeight: 45px;
 $mainColor: #4a4a4a;
-$trimColor: limegreen;
-
-
-
-
-.aws-btn {
-
---button-default-height: 48px;
---button-default-font-size: 14px;
---button-default-border-radius: 8px;
---button-horizontal-padding: 20px;
---button-raise-level: 5px;
---button-hover-pressure: 2;
---transform-speed: 0.185s;
---button-primary-color: #4a4a4a;
---button-primary-color-dark: black;
---button-primary-color-light: #fafafa;
---button-primary-color-hover: #4a4a4a;
---button-primary-border: 0px solid #FFFFFF;
---button-secondary-color: #fffc6c;
---button-secondary-color-dark: #b9b500;
---button-secondary-color-light: #6c6a00;
---button-secondary-color-hover: #fffb3e;
---button-secondary-border: none;
---button-anchor-color: #f3c8ad;
---button-anchor-color-dark: #734922;
---button-anchor-color-light: #4c3016;
---button-anchor-color-hover: #f1bfa0;
---button-anchor-border: 1px solid #8c633c;
-}
-
-
-
-
-
-
-
-
-
+$trimColor: red;
 
 * {
   box-sizing: border-box;
@@ -81,13 +43,8 @@ a.contact-icons:visited  {
     color: #4a4a4a;
   }
 
-// .button:focus:not(:active) {
-//       box-shadow: 0 0 0 0em
-// }
-//
-// .button:focus {
-//   border-color: #dbdbdb;
-// }
+
+
 
 
 .button {
@@ -132,7 +89,7 @@ nav {
   align-items: center;
   z-index: 10;
   background-color: $mainColor;
-  // transition: transform 0.5s;
+  transition: transform 0.5s;
   // border-bottom: 2px solid $trimColor;
 
 
@@ -193,6 +150,7 @@ nav {
 
 .footer {
   padding: 2rem 1.5rem 2rem;
+  background-color: #272727;
 }
 
 
@@ -229,9 +187,14 @@ nav {
     }
 }
 
-
+a.contact-icons:hover {
+  border-bottom: 3px solid $trimColor;
+  border-top: 3px solid $trimColor;
+  padding-top: 2px;
+  padding-bottom: 0px;
+}
 .contact-section {
-  border-bottom: 2px solid $trimColor;
+  // border-bottom: 2px solid $trimColor;
 }
 
 .tech-icons-section {
@@ -249,47 +212,20 @@ nav {
 }
 
 .experience-section {
-  background-color: $trimColor;
+  background-color: white;
 }
 
 
 
-
-
-.contact-list {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  justify-content: center;
-
-
-    .tech-icons {
-    font-size: 17px;
-    margin-left: 10px;
-    }
-
-    a {
-      display: flex;
-      align-items: center;
-      &.mail-icon {
-        font-size: 38px;
-      }
-
-      &:hover {
-        color: $mainColor;
-      }
-    }
-
-    li {
+  .contact-icons {
       color: #4a4a4a;
       padding: 6px;
-      border-radius: 4px;
       margin: 4px;
       font-size: 42px;
+    }
 
 
-      }
-}
+
 
 #profile-pic {
   height: 200px;
@@ -302,6 +238,9 @@ nav {
   margin-top: 25px;
 }
 
+.imac-image {
+  max-width: 80%;
+}
 
 
 
@@ -365,7 +304,8 @@ div.interests-list {
     position: absolute;
     right: 0;
     top: $navHeight;
-    transition: max-height 1s ease-out;
+    // transition: max-height 0.5s ease-in;
+    transition: max-height 0.5s ease;
     padding: 0;
     width: 100%;
   }
@@ -387,10 +327,6 @@ div.interests-list {
       background-color: $trimColor;
     }
   }
-
-  // .minimised {
-  //   transform: translateY(0);
-  // }
 
 
 }

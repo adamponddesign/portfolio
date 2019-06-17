@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import ScrollAnimation from 'react-animate-on-scroll'
+
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLink } from '@fortawesome/free-solid-svg-icons'
 
@@ -18,25 +18,74 @@ class Projects extends React.Component {
           {/* Progress Pro */}
           <div className="columns is-vcentered has-text-centered" >
             <div className="column is-two-thirds">
-              <ScrollAnimation animateIn="fadeInLeft">
-                <img className="apple-items" src="https://i.imgur.com/VLsgXHL.png" />
-              </ScrollAnimation>
+
+              <img className="apple-items" src="https://i.imgur.com/hBh3x9n.png" />
+
             </div>
             <div className="column">
-              <ScrollAnimation animateIn="fadeInRight">
-                <h2>Progress Pro</h2>
-                <p className="project-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec et odio pellentesque diam. Pharetra sit amet aliquam id diam maecenas ultricies mi.</p>
+
+              <h2>Progress Pro</h2>
+              <p className="project-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec et odio pellentesque diam. Pharetra sit amet aliquam id diam maecenas ultricies mi.</p>
 
 
-                <a className="button" href="https://github.com/adamponddesign/progress-pro" target="_blank" rel="noopener noreferrer" >
-                  <FontAwesomeIcon icon={faGithub} />
-                  <span>View on GitHub</span>
-                </a>
-                <a className="button" href="https://progress-pro.herokuapp.com/#/" target="_blank" rel="noopener noreferrer" >
-                  <FontAwesomeIcon icon={faLink} />
-                  <span>View live Site</span>
-                </a>
-              </ScrollAnimation>
+              <a className="button" href="https://github.com/adamponddesign/progress-pro" target="_blank" rel="noopener noreferrer" >
+                <FontAwesomeIcon icon={faGithub} />
+                <span>View on GitHub</span>
+              </a>
+              <a className="button" href="https://progress-pro.herokuapp.com" target="_blank" rel="noopener noreferrer" >
+                <FontAwesomeIcon icon={faLink} />
+                <span>View live Site</span>
+              </a>
+
+            </div>
+          </div>
+          <hr />
+          <div className="columns is-vcentered has-text-centered" >
+            <div className="column is-two-thirds">
+
+              <img className="imac-image" src="https://i.imgur.com/XDEWOpK.png" />
+
+            </div>
+            <div className="column">
+
+              <h2>After Midnight</h2>
+              <p className="project-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec et odio pellentesque diam. Pharetra sit amet aliquam id diam maecenas ultricies mi.</p>
+
+
+              <a className="button" href="https://github.com/adamponddesign/after-midnight" target="_blank" rel="noopener noreferrer" >
+                <FontAwesomeIcon icon={faGithub} />
+                <span>View on GitHub</span>
+              </a>
+              <a className="button" href="https://after-midnight.herokuapp.com" target="_blank" rel="noopener noreferrer" >
+                <FontAwesomeIcon icon={faLink} />
+                <span>View live Site</span>
+              </a>
+
+            </div>
+          </div>
+          <hr />
+
+          <div className="columns is-vcentered has-text-centered" >
+            <div className="column is-two-thirds">
+
+              <img className="imac-image" src="https://i.imgur.com/6lk3WkJ.png" />
+
+            </div>
+            <div className="column">
+
+              <h2>After Midnight</h2>
+              <p className="project-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec et odio pellentesque diam. Pharetra sit amet aliquam id diam maecenas ultricies mi.</p>
+
+
+              <a className="button" href="https://github.com/adamponddesign/london-train-departures" target="_blank" rel="noopener noreferrer" >
+                <FontAwesomeIcon icon={faGithub} />
+                <span>View on GitHub</span>
+              </a>
+              <a className="button" href="https://adamponddesign.github.io/london-train-departures/#/" target="_blank" rel="noopener noreferrer" >
+                <FontAwesomeIcon icon={faLink} />
+                <span>View live Site</span>
+              </a>
+
             </div>
           </div>
           <hr />
