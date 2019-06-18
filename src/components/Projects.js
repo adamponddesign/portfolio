@@ -73,7 +73,7 @@ class Projects extends React.Component {
             </div>
             <div className="column">
 
-              <h2>After Midnight</h2>
+              <h2>London Train Departures</h2>
               <p className="project-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec et odio pellentesque diam. Pharetra sit amet aliquam id diam maecenas ultricies mi.</p>
 
 
@@ -81,7 +81,7 @@ class Projects extends React.Component {
                 <FontAwesomeIcon icon={faGithub} />
                 <span>View on GitHub</span>
               </a>
-              <a className="button" href="https://adamponddesign.github.io/london-train-departures/#/" target="_blank" rel="noopener noreferrer" >
+              <a className="button" href="https://adamponddesign.github.io/london-train-departures" target="_blank" rel="noopener noreferrer" >
                 <FontAwesomeIcon icon={faLink} />
                 <span>View live Site</span>
               </a>
@@ -89,6 +89,30 @@ class Projects extends React.Component {
             </div>
           </div>
           <hr />
+
+          <div className="columns is-vcentered has-text-centered" >
+            <div className="column is-two-thirds">
+
+              <img className="iphone-image" src="https://i.imgur.com/yOC2TtT.png" />
+
+            </div>
+            <div className="column">
+
+              <h2>Mastermind</h2>
+              <p className="project-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec et odio pellentesque diam. Pharetra sit amet aliquam id diam maecenas ultricies mi.</p>
+
+
+              <a className="button" href="https://github.com/adamponddesign/mastermind" target="_blank" rel="noopener noreferrer" >
+                <FontAwesomeIcon icon={faGithub} />
+                <span>View on GitHub</span>
+              </a>
+              <a className="button" href="https://adamponddesign.github.io/mastermind" target="_blank" rel="noopener noreferrer" >
+                <FontAwesomeIcon icon={faLink} />
+                <span>View live Site</span>
+              </a>
+
+            </div>
+          </div>
 
 
 
