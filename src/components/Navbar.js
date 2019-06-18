@@ -1,21 +1,23 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import Breakpoint from 'react-socks'
 
 class Navbar extends React.Component {
 
   constructor(props) {
     super(props)
 
-    this.state = { active: false }
-
+    this.state = {
+      active: false
+    }
     this.toggleActive = this.toggleActive.bind(this)
   }
+
 
   toggleActive() {
     this.setState({ active: !this.state.active })
   }
-
 
   render() {
     return (
@@ -25,7 +27,14 @@ class Navbar extends React.Component {
 
 
         <div className="nav-logo">
-          <a href="#">AP</a>
+          <a href="#">
+            <Breakpoint small up>
+              <img src="https://i.imgur.com/S5RNmij.png" />
+            </Breakpoint>
+            <Breakpoint xsmall>
+              <img src="https://i.imgur.com/vkDvRQs.png" />
+            </Breakpoint>
+          </a>
         </div>
 
         <a className="skip" href="#menu" onClick={this.toggleActive}>

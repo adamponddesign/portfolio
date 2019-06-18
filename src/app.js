@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import 'bulma'
 import './style.scss'
-
+import { BreakpointProvider } from 'react-socks'
 
 import Navbar from './components/Navbar'
 import Home from './components/Home'
@@ -18,7 +18,9 @@ class App extends React.Component {
     return (
 
       <main>
-        <Navbar />
+        <BreakpointProvider>
+          <Navbar />
+        </BreakpointProvider>
         <Home />
         <Experience />
         <TechIcons />

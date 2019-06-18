@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap');
 $navHeight: 45px;
-$mainColor: #4a4a4a;
-$trimColor: #ffc575;
+$mainColor: #0f374f;
+$trimColor: #f15a24;
 
 * {
   box-sizing: border-box;
@@ -115,17 +115,18 @@ nav {
   }
 
   .nav-logo {
-    margin: 10px;
-    font-size: 30px;
 
+    max-width: 350px;
+    margin-top: 10px;
+    margin-left: 15px;
+    // font-size: 30px;
+    //
     a {
       color: white;
+      padding: 0;
       &:hover {
-        // color: blue;
-        border-bottom: 3px solid $trimColor;
-        border-top: 3px solid $trimColor;
-        padding-top: 1px;
-        padding-bottom: 2px;
+        border-bottom: none;
+        border-top: none;
       }
     }
 
@@ -295,6 +296,9 @@ div.interests-list {
 
   nav {
     height: $navHeight;
+    .nav-logo {
+      max-width: 150px;
+    }
   }
   /* Give the .nav ul a height when it's been opened, i.e. make it show */
   nav.open {
