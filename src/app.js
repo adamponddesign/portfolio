@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import 'bulma'
 import './style.scss'
+import { setDefaultBreakpoints } from 'react-socks'
 import { BreakpointProvider } from 'react-socks'
 
 import Navbar from './components/Navbar'
@@ -12,6 +13,15 @@ import Projects from './components/Projects'
 import Interests from './components/Interests'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+
+setDefaultBreakpoints([
+  { xs: 0 },
+  { s: 376 },
+  { m: 425 },
+  { l: 769 },
+  { xl: 1025 }
+])
+
 
 class App extends React.Component {
   render() {

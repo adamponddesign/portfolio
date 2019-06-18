@@ -1,7 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap');
-$navHeight: 45px;
+
+$navHeight: 55px;
 $mainColor: #0f374f;
 $trimColor: #f15a24;
+
+@font-face {
+    font-family: 'League Spartan Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('League Spartan Bold'), url('LeagueSpartan-Bold.woff') format('woff');
+}
 
 * {
   box-sizing: border-box;
@@ -14,23 +21,28 @@ html {
 }
 
 main {
-  font-family: 'Nanum Gothic', sans-serif;
+
 }
 
 
+h1 {
+  font-family: 'League Spartan Bold';
+  text-transform: uppercase;
+  font-size: 40px;
+}
 
 h1, h2 {
-  font-weight: normal;
-}
-h1 {
-  font-size: 40px;
+  font-family: 'League Spartan Bold';
+  text-transform: uppercase;
 }
 
 h2 {
   font-size: 30px;
 }
 h3 {
-  font-size: 20px;
+  font-family: 'League Spartan Bold';
+  text-transform: uppercase;
+  font-size: 25px;
 }
 
 hr {
@@ -63,8 +75,7 @@ a.contact-icons:visited  {
   &:hover {
     color: white;
     font-weight: bold;
-    border-bottom: 3px solid $trimColor;
-    border-top: 3px solid $trimColor;
+    background-color:$trimColor;
   }
 
 
@@ -90,6 +101,8 @@ nav {
   z-index: 10;
   background-color: $mainColor;
   transition: transform 0.5s;
+  font-family: 'League Spartan Bold';
+  text-transform: uppercase;
   // border-bottom: 2px solid $trimColor;
 
 
@@ -107,17 +120,17 @@ nav {
   a:hover{
     color: white;
     font-weight: bold;
-    border-bottom: 3px solid $trimColor;
-    border-top: 3px solid $trimColor;
-    padding-top: 9px;
-    padding-bottom: 11px;
+    border-bottom: 6px solid $trimColor;
+    border-top: 6px solid $trimColor;
+    padding-top: 12px;
+    padding-bottom: 9px;
 
   }
 
   .nav-logo {
 
     max-width: 350px;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 15px;
     // font-size: 30px;
     //
@@ -134,6 +147,7 @@ nav {
 
   ul {
     padding-right: 15px;
+    padding-top: 4px;
     margin: 0;
     li {
       display: inline;
@@ -189,10 +203,10 @@ nav {
 }
 
 a.contact-icons:hover {
-  border-bottom: 3px solid $trimColor;
-  border-top: 3px solid $trimColor;
-  padding-top: 2px;
-  padding-bottom: 0px;
+  border-bottom: 6px solid $trimColor;
+  border-top: 6px solid $trimColor;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 .contact-section {
   // border-bottom: 2px solid $trimColor;
@@ -213,7 +227,7 @@ a.contact-icons:hover {
 }
 
 .experience-section {
-  background-color: white;
+  background-color: #fafafa;
 }
 
 
@@ -280,7 +294,44 @@ div.interests-list {
 }
 
 
-@media all and (max-width: 575px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 775px) {
 
 
   .skip {
@@ -292,12 +343,12 @@ div.interests-list {
     }
   }
 
-  $navHeight: 60px;
+  $navHeight: 50px;
 
   nav {
     height: $navHeight;
     .nav-logo {
-      max-width: 150px;
+      max-width: 130px;
     }
   }
   /* Give the .nav ul a height when it's been opened, i.e. make it show */
@@ -340,6 +391,82 @@ div.interests-list {
       background-color: $trimColor;
     }
   }
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+// @media all and (max-width: 340px) and (max-width: 549px){
+//   nav {
+//     height: $navHeight;
+//     .nav-logo {
+//       max-width: 120px;
+//     }
+//   }
+// }

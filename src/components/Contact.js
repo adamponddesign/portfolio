@@ -11,27 +11,28 @@ class Contact extends React.Component {
       <div id="contact" className="contact-section section">
         <div className="container">
 
-          <h2>Contact</h2>
+          <h2>{'< contact />'}</h2>
           <div className="columns is-vcentered has-text-centered" >
             <div className="column contact-icons">
 
 
-              <a href="mailto:adam@adampond.co.uk" target="_blank" rel="noopener noreferrer" className="mail-icon contact-icons">
+
+              <a className="button" href="mailto:adam@adampond.co.uk" target="_blank" rel="noopener noreferrer" >
                 <FontAwesomeIcon icon={faEnvelope} />
-                {/*<span className="tech-icons">adam@adampond.co.uk</span>*/}
+                <span>Email</span>
               </a>
 
-
-              <a href="https://github.com/adamponddesign" target="_blank" rel="noopener noreferrer" className="contact-icons">
+              <a className="button" href="https://github.com/adamponddesign" target="_blank" rel="noopener noreferrer" >
                 <FontAwesomeIcon icon={faGithub} />
-                {/*<span className="tech-icons">github.com/adamponddesign</span>*/}
+                <span>GitHub</span>
               </a>
 
-
-              <a href="https://www.linkedin.com/in/adam-pond/" target="_blank" rel="noopener noreferrer" className="contact-icons">
+              <a className="button" href="https://www.linkedin.com/in/adam-pond/" target="_blank" rel="noopener noreferrer" >
                 <FontAwesomeIcon icon={faLinkedin} />
-                {/*<span className="tech-icons">linkedin.com/in/adam-pond/</span>*/}
+                <span>Linkedin</span>
               </a>
+
+
 
 
             </div>

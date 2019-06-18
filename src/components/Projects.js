@@ -14,7 +14,7 @@ class Projects extends React.Component {
     return (
       <div id="projects" className="section projects-section">
         <div className="container">
-          <h2>Projects</h2>
+          <h2>{'<Projects />'}</h2>
           {/* Progress Pro */}
           <div className="columns is-vcentered has-text-centered" >
             <div className="column is-two-thirds">
@@ -24,7 +24,7 @@ class Projects extends React.Component {
             </div>
             <div className="column">
 
-              <h2>Progress Pro</h2>
+              <h3>Progress Pro</h3>
               <p className="project-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec et odio pellentesque diam. Pharetra sit amet aliquam id diam maecenas ultricies mi.</p>
 
 
@@ -48,7 +48,7 @@ class Projects extends React.Component {
             </div>
             <div className="column">
 
-              <h2>After Midnight</h2>
+              <h3>After Midnight</h3>
               <p className="project-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec et odio pellentesque diam. Pharetra sit amet aliquam id diam maecenas ultricies mi.</p>
 
 
@@ -73,7 +73,7 @@ class Projects extends React.Component {
             </div>
             <div className="column">
 
-              <h2>London Train Departures</h2>
+              <h3>London Train Departures</h3>
               <p className="project-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec et odio pellentesque diam. Pharetra sit amet aliquam id diam maecenas ultricies mi.</p>
 
 
@@ -98,7 +98,7 @@ class Projects extends React.Component {
             </div>
             <div className="column">
 
-              <h2>Mastermind</h2>
+              <h3>Mastermind</h3>
               <p className="project-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec et odio pellentesque diam. Pharetra sit amet aliquam id diam maecenas ultricies mi.</p>
 
 

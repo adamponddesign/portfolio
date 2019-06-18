@@ -9,7 +9,7 @@ class Interests extends React.Component {
       <div id="interests" className="section interests-section">
         <div className="container">
 
-          <h2>Other Interests</h2>
+          <h2>{'< Other Interests >'}</h2>
           <div className="interests-list columns">
             <div className="column is-half-tablet is-one-quarter-desktop is-full-mobile">
               <FontAwesomeIcon icon={faMusic} />

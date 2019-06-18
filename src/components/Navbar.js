@@ -28,11 +28,11 @@ class Navbar extends React.Component {
 
         <div className="nav-logo">
           <a href="#">
-            <Breakpoint small up>
-              <img src="https://i.imgur.com/S5RNmij.png" />
-            </Breakpoint>
-            <Breakpoint xsmall>
+            <Breakpoint m down>
               <img src="https://i.imgur.com/vkDvRQs.png" />
+            </Breakpoint>
+            <Breakpoint l up>
+              <img src="https://i.imgur.com/S5RNmij.png" />
             </Breakpoint>
           </a>
         </div>

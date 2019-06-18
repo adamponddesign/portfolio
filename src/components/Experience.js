@@ -9,7 +9,7 @@ class Experience extends React.Component {
       <div id="experience" className="section experience-section transition active">
         <div className="container">
 
-          <h2>Experience</h2>
+          <h2>{'< Experience />'}</h2>
 
           <div className="columns is-vcentered has-text-centered" >
 
