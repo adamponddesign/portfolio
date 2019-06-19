@@ -25,7 +25,17 @@ class Projects extends React.Component {
             <div className="column">
 
               <h3>Progress Pro</h3>
-              <p className="project-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec et odio pellentesque diam. Pharetra sit amet aliquam id diam maecenas ultricies mi.</p>
+              <p className="project-paragraph">
+              Solo project.  7 days.  A fully responsive application for use when training in the Gym.
+              Users can register, login, add multiple programmes of their own, and track weights lifted over time.
+              Python/Flask/PostgreSQL back-end and a React front-end utilising Webpack.
+              </p>
+              <p className="text-color">JavaScript(ES6) | Python3 | React | Webpack | PostgreSQL | Flask | Ajax | HTML5 | Bulma | SCSS | GitHub</p>
+
+
+
+
+
 
 
               <a className="button" href="https://github.com/adamponddesign/progress-pro" target="_blank" rel="noopener noreferrer" >
@@ -49,8 +59,8 @@ class Projects extends React.Component {
             <div className="column">
 
               <h3>After Midnight</h3>
-              <p className="project-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec et odio pellentesque diam. Pharetra sit amet aliquam id diam maecenas ultricies mi.</p>
-
+              <p className="project-paragraph">{'Pair coding project.  5 days.  A map based site highlighting venues around London that are open after midnight.  A full-stack application with a React front-end and noSQL database.'}</p>
+              <p className="text-color">JavaScript (ES6) | React | Webpack | MongoDB/Mongoose | Express | Ajax | HTML5 | Bulma | SCSS | GitHub | React Select | ReactMapBox-GL</p>
 
               <a className="button" href="https://github.com/adamponddesign/after-midnight" target="_blank" rel="noopener noreferrer" >
                 <FontAwesomeIcon icon={faGithub} />
@@ -74,7 +84,10 @@ class Projects extends React.Component {
             <div className="column">
 
               <h3>London Train Departures</h3>
-              <p className="project-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec et odio pellentesque diam. Pharetra sit amet aliquam id diam maecenas ultricies mi.</p>
+              <p className="project-paragraph">Pair coding project.  2 days.  A application which provides departure and arrival times for Railway stations across London.  The data is obtained from the transportAPI.</p>
+              <p className="text-color">React | JavaScript | HTML5 | SCSS | Webpack | Axios | Bulma | GitHub | Insomnia</p>
+
+
 
 
               <a className="button" href="https://github.com/adamponddesign/london-train-departures" target="_blank" rel="noopener noreferrer" >
@@ -99,7 +112,9 @@ class Projects extends React.Component {
             <div className="column">
 
               <h3>Mastermind</h3>
-              <p className="project-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec et odio pellentesque diam. Pharetra sit amet aliquam id diam maecenas ultricies mi.</p>
+              <p className="project-paragraph">{'Solo Project.  7 Days.  Mastermind is a simple front-end game based on the classic 1970\'s board game. The aim of the game is to guess the 4 colour code that has been randomly created by the computer.  '}
+              </p>
+              <p className="text-color">HTML5 | CSS3 | JavaScript | GitHub</p>
 
 
               <a className="button" href="https://github.com/adamponddesign/mastermind" target="_blank" rel="noopener noreferrer" >

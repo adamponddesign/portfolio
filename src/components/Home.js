@@ -5,9 +5,13 @@ class Home extends React.Component {
     return (
       <section className="hero is-fullheight">
         <div className="hero-body">
-          <div className="container has-text-centered">
-            <p className="title">Adam Pond</p>
-            <p className="subtitle">Full-Stack Developer</p>
+          <div className="container">
+            <h1>
+              <span className="brackets">{'<'}</span>
+              <span>{'Adam Pond /'}</span>
+              <span className="brackets">{'>'}</span>
+            </h1>
+            <h2 id="logo-sub">Full-Stack Developer</h2>
           </div>
         </div>
       </section>

@@ -37,12 +37,13 @@ class Navbar extends React.Component {
           </a>
         </div>
 
-        <a className="skip" href="#menu" onClick={this.toggleActive}>
+        <a id="burger" className="skip" href="#menu" onClick={this.toggleActive}>
           <FontAwesomeIcon icon={faBars} />
         </a>
 
 
         <ul id="menu">
+          <li onClick={this.toggleActive}><a href="#about">About</a></li>
           <li onClick={this.toggleActive}><a href="#experience">Experience</a></li>
           <li onClick={this.toggleActive}><a href="#projects">Projects</a></li>
           <li onClick={this.toggleActive}><a href="#interests">Interests</a></li>

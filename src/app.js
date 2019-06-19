@@ -7,6 +7,7 @@ import { BreakpointProvider } from 'react-socks'
 
 import Navbar from './components/Navbar'
 import Home from './components/Home'
+import About from './components/About'
 import Experience from './components/Experience'
 import TechIcons from './components/TechIcons'
 import Projects from './components/Projects'
@@ -32,6 +33,7 @@ class App extends React.Component {
           <Navbar />
         </BreakpointProvider>
         <Home />
+        <About />
         <Experience />
         <TechIcons />
         <Projects />

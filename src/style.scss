@@ -18,37 +18,47 @@ $trimColor: #f15a24;
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 55px;
 }
 
-main {
-
-}
 
 
 h1 {
   font-family: 'League Spartan Bold';
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 50px;
 }
 
-h1, h2 {
-  font-family: 'League Spartan Bold';
-  text-transform: uppercase;
-}
+
 
 h2 {
   font-size: 30px;
+  text-transform: uppercase;
+  font-family: 'League Spartan Bold';
 }
 h3 {
   font-family: 'League Spartan Bold';
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 22px;
+}
+h4 {
+  // font-family: 'League Spartan Bold';
+  text-transform: uppercase;
+  font-size: 15px;
 }
 
 hr {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(196, 196, 196), rgba(0, 0, 0, 0));
+}
+
+.text-color {
+  color: #f15a24;
+  font-size: 1em;
+}
+.section {
+    padding: 2rem 1.5rem;
 }
 
 a.contact-icons:visited  {
@@ -74,7 +84,6 @@ a.contact-icons:visited  {
 
   &:hover {
     color: white;
-    font-weight: bold;
     background-color:$trimColor;
   }
 
@@ -119,9 +128,8 @@ nav {
   }
   a:hover{
     color: white;
-    font-weight: bold;
-    border-bottom: 6px solid $trimColor;
-    border-top: 6px solid $trimColor;
+    border-bottom: 4px solid $trimColor;
+    border-top: 4px solid $trimColor;
     padding-top: 12px;
     padding-bottom: 9px;
 
@@ -178,18 +186,17 @@ nav {
   padding: 20px;
   // justify-content: space-between;
     .tech-icons {
-    font-size: 17px;
+    font-size: 16px;
     }
 
     li {
       display: flex;
       flex-direction: column;
-      height: 120px;
+      height: 105px;
       color: #4a4a4a;
       padding: 6px;
-      width: 120px;
-      border-radius: 4px;
-      margin: 4px;
+      width: 105px;
+      margin: 2px;
       text-align: center;
       align-items: center;
       justify-content: center;
@@ -202,14 +209,15 @@ nav {
     }
 }
 
-a.contact-icons:hover {
-  border-bottom: 6px solid $trimColor;
-  border-top: 6px solid $trimColor;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
+// a.contact-icons:hover {
+//   border-bottom: 4px solid $trimColor;
+//   border-top: 4px solid $trimColor;
+//   padding-top: 4px;
+//   padding-bottom: 4px;
+// }
 .contact-section {
   // border-bottom: 2px solid $trimColor;
+  // border-top: 3px solid $trimColor;
 }
 
 .tech-icons-section {
@@ -220,13 +228,23 @@ a.contact-icons:hover {
 .interests-section {
   background-color: $mainColor;
   color: white;
+  // border-top: 3px solid $trimColor;
 }
 
 .projects-section {
   background-color: white;
+  // border-top: 3px solid $trimColor;
+
 }
 
 .experience-section {
+  background-color: $mainColor;
+  // border-top: 3px solid $trimColor;
+  color: white;
+}
+
+#about {
+  // border-top: 3px solid $trimColor;
   background-color: #fafafa;
 }
 
@@ -240,7 +258,9 @@ a.contact-icons:hover {
     }
 
 
-
+#logo-sub {
+  margin-left: 30px;
+}
 
 #profile-pic {
   height: 200px;
@@ -249,7 +269,7 @@ a.contact-icons:hover {
 }
 
 #ga-logo {
-  width: 200px;
+  width: 350px;
   margin-top: 25px;
 }
 
@@ -275,7 +295,7 @@ div.interests-list {
 }
 
 .interests-list div {
-  font-size: 42px;
+  font-size: 32px;
   text-align: center;
 }
 
@@ -324,23 +344,55 @@ div.interests-list {
 
 
 
-
-
-
-
-
-
-
 @media all and (max-width: 775px) {
+
+  #logo-sub {
+    margin-left: 18px;
+  }
+
+  h1 {
+    font-family: 'League Spartan Bold';
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+
+  .text-color {
+    color: #f15a24;
+    font-size: 0.9em;
+  }
+
+
+  #ga-logo {
+    width: 200px;
+    margin-top: 25px;
+  }
+
+  html {
+    scroll-padding-top: 50px;
+  }
+
+
+  .tech-list li {
+    height: 95px;
+    padding: 0;
+    width: 95px;
+    margin: 0;
+    font-size: 42px;
+
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 16px;
+  }
 
 
   .skip {
     display: block;
-    margin: 10px;
-    &:hover {
-      background-color: $mainColor;
-      color: white;
-    }
+    margin: 15px;
+
   }
 
   $navHeight: 50px;
@@ -355,9 +407,8 @@ div.interests-list {
   nav.open {
     ul {
       max-height: 30em;
-    }
-    i {
-      transform: rotate(180deg);
+      border-bottom: 4px solid $trimColor;
+      border-left: 4px solid $trimColor;
     }
   }
 
@@ -371,7 +422,6 @@ div.interests-list {
     // transition: max-height 0.5s ease-in;
     transition: max-height 0.5s ease;
     padding: 0;
-    width: 100%;
   }
 
   /* Style the list items to appear under the menu link */
@@ -381,92 +431,18 @@ div.interests-list {
   }
 
   nav li a {
-    padding: 0.5em;
     display: block;
     background-color: $mainColor;
-    font-size: 22px;
-
-
-    &:hover {
-      background-color: $trimColor;
     }
-  }
+
+    nav a:hover {
+      border-bottom: 0;
+      border-top: 0;
+      padding: 15px 10px;
+
+    }
+
+#menu :hover {
+  background-color:$trimColor;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//
-// @media all and (max-width: 340px) and (max-width: 549px){
-//   nav {
-//     height: $navHeight;
-//     .nav-logo {
-//       max-width: 120px;
-//     }
-//   }
-// }
+}
