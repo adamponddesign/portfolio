@@ -17,6 +17,9 @@ $trimColor: #f15a24;
 }
 
 html {
+  /* Always force (mandatory) scrolling to a snap point on the y-axis */
+  scroll-snap-type: y mandatory;
+
   scroll-behavior: smooth;
   scroll-padding-top: 55px;
 }

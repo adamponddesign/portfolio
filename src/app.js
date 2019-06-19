@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Favicon from 'react-favicon';
 import 'bulma'
 import './style.scss'
 import { setDefaultBreakpoints } from 'react-socks'
@@ -28,7 +29,7 @@ class App extends React.Component {
   render() {
     return (
 
-      <main>
+      <div>
         <BreakpointProvider>
           <Navbar />
         </BreakpointProvider>
@@ -41,13 +42,16 @@ class App extends React.Component {
         <Contact />
         <Footer />
 
-      </main>
+      </div>
 
     )
   }
 }
 
 ReactDOM.render(
-  <App />,
+  <div>
+    <Favicon url="https://i.imgur.com/GIjCcZb.png" />
+    <App />
+  </div>,
   document.getElementById('root')
 )
