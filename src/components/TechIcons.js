@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faReact, faJs, faPython, faHtml5, faCss3Alt, faSass, faNodeJs, faGithub, faTrello} from '@fortawesome/free-brands-svg-icons'
+import { faReact, faJs, faPython, faHtml5, faCss3Alt, faSass, faNodeJs, faGithub, faTrello, faYarn, faNpm} from '@fortawesome/free-brands-svg-icons'
 import { faDatabase } from '@fortawesome/free-solid-svg-icons'
 
 
@@ -27,6 +27,8 @@ class TechIcons extends React.Component {
             <li><i className="devicon-mongodb-plain"></i><span className="tech-icons">MongoDB</span></li>
             <li><i className="devicon-webpack-plain"></i><span className="tech-icons">Webpack</span></li>
             <li><i className="devicon-express-original"></i><span className="tech-icons">Express</span></li>
+            <li><FontAwesomeIcon icon={faNpm} /><span className="tech-icons">npm</span></li>
+            <li><FontAwesomeIcon icon={faYarn} /><span className="tech-icons">yarn</span></li>
             <li><i className="devicon-atom-original"></i><span className="tech-icons">Atom</span></li>
             <li><img src="https://i.imgur.com/oRBJkaQ.png"/><span className="tech-icons">Bulma</span></li>
             <li><i className="devicon-heroku-original"></i><span className="tech-icons">Heroku</span></li>
