@@ -50,7 +50,7 @@ class App extends React.Component {
 
 ReactDOM.render(
   <div>
-    <Favicon url="https://i.imgur.com/GIjCcZb.png" />
+    <Favicon url="https://i.imgur.com/SAyCCAz.png" />
     <App />
   </div>,
   document.getElementById('root')

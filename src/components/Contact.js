@@ -17,7 +17,7 @@ class Contact extends React.Component {
 
 
 
-              <a className="button" href="mailto:adam@adampond.co.uk" target="_blank" rel="noopener noreferrer" >
+              <a className="button" href="mailto:adam@adampond.co.uk">
                 <FontAwesomeIcon icon={faEnvelope} />
                 <span>Email</span>
               </a>
