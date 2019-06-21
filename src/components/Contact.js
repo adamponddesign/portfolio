@@ -19,17 +19,17 @@ class Contact extends React.Component {
 
               <a className="button" href="mailto:adam@adampond.co.uk">
                 <FontAwesomeIcon icon={faEnvelope} />
-                <span>Email</span>
+                <span>adam@adampond.co.uk</span>
               </a>
 
               <a className="button" href="https://github.com/adamponddesign" target="_blank" rel="noopener noreferrer" >
                 <FontAwesomeIcon icon={faGithub} />
-                <span>GitHub</span>
+                <span>github.com/adamponddesign</span>
               </a>
 
               <a className="button" href="https://www.linkedin.com/in/adam-pond/" target="_blank" rel="noopener noreferrer" >
                 <FontAwesomeIcon icon={faLinkedin} />
-                <span>Linkedin</span>
+                <span>linkedin.com/in/adam-pond</span>
               </a>
 
 

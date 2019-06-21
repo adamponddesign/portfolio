@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Favicon from 'react-favicon';
+import Favicon from 'react-favicon'
 import 'bulma'
 import './style.scss'
 import { setDefaultBreakpoints } from 'react-socks'
