@@ -83,18 +83,18 @@ class Projects extends React.Component {
             </div>
             <div className="column">
 
-              <h3>London Train Departures</h3>
-              <p className="project-paragraph">Pair coding project.  2 days.  A application which provides departure and arrival times for Railway stations across London.  The data is obtained from the transportAPI.</p>
+              <h3>London Trains Info</h3>
+              <p className="project-paragraph">Pair coding project.  2 days.  An application which provides departure and arrival times for Railway stations across London.  The data is obtained from the transportAPI.</p>
               <p className="text-color">React | JavaScript | HTML5 | SCSS | Webpack | Axios | Bulma | GitHub | Insomnia</p>
 
 
 
 
-              <a className="button" href="https://github.com/adamponddesign/london-train-departures" target="_blank" rel="noopener noreferrer" >
+              <a className="button" href="https://github.com/adamponddesign/london-trains" target="_blank" rel="noopener noreferrer" >
                 <FontAwesomeIcon icon={faGithub} />
                 <span>View on GitHub</span>
               </a>
-              <a className="button" href="https://adamponddesign.github.io/london-train-departures" target="_blank" rel="noopener noreferrer" >
+              <a className="button" href="https://adamponddesign.github.io/london-trains" target="_blank" rel="noopener noreferrer" >
                 <FontAwesomeIcon icon={faLink} />
                 <span>View live Site</span>
               </a>

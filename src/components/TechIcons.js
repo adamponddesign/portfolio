@@ -14,13 +14,13 @@ class TechIcons extends React.Component {
           <ul className="tech-list">
 
 
-            <li><FontAwesomeIcon icon={faReact} /><span className="tech-icons">ReactJS</span></li>
+            <li><FontAwesomeIcon icon={faReact} /><span className="tech-icons">React</span></li>
             <li><FontAwesomeIcon icon={faJs} /><span className="tech-icons">JavaScript</span></li>
             <li><FontAwesomeIcon icon={faPython} /><span className="tech-icons">Python</span></li>
             <li><FontAwesomeIcon icon={faHtml5} /><span className="tech-icons">HTML5</span></li>
             <li><FontAwesomeIcon icon={faCss3Alt} /><span className="tech-icons">CSS3</span></li>
             <li><FontAwesomeIcon icon={faSass} /><span className="tech-icons">SASS</span></li>
-            <li><FontAwesomeIcon icon={faNodeJs} /><span className="tech-icons">NodeJS</span></li>
+            <li><FontAwesomeIcon icon={faNodeJs} /><span className="tech-icons">Node.js</span></li>
             <li><FontAwesomeIcon icon={faDatabase} /><span className="tech-icons">NoSQL</span></li>
             <li><FontAwesomeIcon icon={faGithub} /><span className="tech-icons">GitHub</span></li>
             <li><i className="devicon-postgresql-plain"></i><span className="tech-icons">PostgreSQL</span></li>

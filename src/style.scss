@@ -68,7 +68,19 @@ a.contact-icons:visited  {
     color: #4a4a4a;
   }
 
-
+// .hero-body {
+//   background-image: url(https://i.imgur.com/IR2TNbj.gif);
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   // background-size: 400px;
+//   // -o-background-size: 400px;
+//   // -moz-background-size: 400px;
+//   -webkit-background-size: 400px;
+//   // min-height: 2000px;
+//   background-attachment: fixed;
+//   background-position-y: 100px;
+//
+// }
 
 
 
@@ -349,65 +361,38 @@ div.interests-list {
 
 @media all and (max-width: 775px) {
 
-  #logo-sub {
-    margin-left: 18px;
-  }
+// mobile nav menu dropdown
+$navHeight: 50px;
 
-  h1 {
-    font-family: 'League Spartan Bold';
-    text-transform: uppercase;
-    font-size: 30px;
-  }
-
-  .text-color {
-    color: #f15a24;
-    font-size: 0.9em;
+  svg.svg-inline--fa.fa-chevron-down.fa-w-14 {
+    font-size: 24px;
   }
 
 
-  #ga-logo {
-    width: 200px;
-    margin-top: 25px;
-  }
-
-  html {
-    scroll-padding-top: 50px;
-  }
-
-
-  .tech-list li {
-    height: 95px;
-    padding: 0;
-    width: 95px;
-    margin: 0;
-    font-size: 42px;
-
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-  h3 {
-    font-size: 16px;
-  }
-
-
-  .skip {
-    display: block;
-    margin: 15px;
-
-  }
-
-  $navHeight: 50px;
 
   nav {
     height: $navHeight;
     .nav-logo {
       max-width: 130px;
     }
+    .skip{
+      transition: transform 0.5s;
+      margin-right: 20px;
+      display: block;
+
+    }
   }
-  /* Give the .nav ul a height when it's been opened, i.e. make it show */
+
+
+
+
+  // mobile nav dropdown meny when open
   nav.open {
+    .skip{
+      transform: rotate(180deg);
+      transition: transform 0.5s;
+      margin-bottom: 9px;
+    }
     ul {
       max-height: 30em;
       border-bottom: 4px solid $trimColor;
@@ -436,16 +421,71 @@ div.interests-list {
   nav li a {
     display: block;
     background-color: $mainColor;
-    }
+  }
 
-    nav a:hover {
-      border-bottom: 0;
-      border-top: 0;
-      padding: 15px 10px;
+  nav a:hover {
+    border-bottom: 0;
+    border-top: 0;
+    padding: 15px 10px;
 
-    }
+}
 
+// mobile nav dropdown hover highlight
 #menu :hover {
   background-color:$trimColor;
 }
+
+// •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+html {
+  scroll-padding-top: 50px;
+}
+
+  h1 {
+    font-family: 'League Spartan Bold';
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+
+  .text-color {
+    color: #f15a24;
+    font-size: 0.9em;
+  }
+
+  #logo-sub {
+    margin-left: 18px;
+  }
+
+  #ga-logo {
+    width: 200px;
+    margin-top: 25px;
+  }
+
+
+
+  .tech-list li {
+    height: 95px;
+    padding: 0;
+    width: 95px;
+    margin: 0;
+    font-size: 42px;
+  }
+
+
+
+
+
+
+
+
+
+
+
 }

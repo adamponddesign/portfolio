@@ -12,6 +12,7 @@ class Home extends React.Component {
               <span className="brackets">{'>'}</span>
             </h1>
             <h2 id="logo-sub">Full-Stack Developer</h2>
+
           </div>
         </div>
       </section>
