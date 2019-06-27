@@ -10,6 +10,8 @@ $trimColor: #f15a24;
     src: local('League Spartan Bold'), url('LeagueSpartan-Bold.woff') format('woff');
 }
 
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -68,21 +70,127 @@ a.contact-icons:visited  {
     color: #4a4a4a;
   }
 
-// .hero-body {
-//   background-image: url(https://i.imgur.com/IR2TNbj.gif);
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   // background-size: 400px;
-//   // -o-background-size: 400px;
-//   // -moz-background-size: 400px;
-//   -webkit-background-size: 400px;
-//   // min-height: 2000px;
-//   background-attachment: fixed;
-//   background-position-y: 100px;
-//
-// }
+
+// landing page animations •••••••••••••••••••
 
 
+#name-home-hero {
+  position :relative;
+  -webkit-animation: mymove 2s; /* Safari 4.0 - 8.0 */
+  animation: mymove 2s;
+  line-height: 40px;
+  // text-align: center;
+
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  from {left: -500px;}
+  to {left: 0px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  from {left: -500px;}
+  to {left: 0px;}
+}
+
+/* sub heading Animation */
+
+
+#logo-sub {
+    margin-left: 30px;
+    border-right: 4px solid $trimColor;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.anim-typewriter{
+  animation: typewriter 2.9s steps(20) 1 normal both,
+             blinkTextCursor 500ms steps(20) infinite normal;
+  animation-delay: 2s;
+}
+
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 13em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: $trimColor;}
+  to{border-right-color: transparent;}
+}
+
+
+// chevron bounce
+
+#scroll-chevron {
+  text-align: center;
+  font-size: 35px;
+  color: $trimColor;
+  position: relative;
+  bottom: 10px;
+  bottom: -312px;
+}
+
+
+.bounce {
+	animation: bounce 2s infinite;
+	-webkit-animation: bounce 2s infinite;
+	-moz-animation: bounce 2s infinite;
+	-o-animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+	40% {-webkit-transform: translateY(-30px);}
+	60% {-webkit-transform: translateY(-15px);}
+}
+
+@-moz-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+	40% {-moz-transform: translateY(-30px);}
+	60% {-moz-transform: translateY(-15px);}
+}
+
+@-o-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+	40% {-o-transform: translateY(-30px);}
+	60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  // opacity:0;
+  // -webkit-animation:fadeIn ease-in 1;
+  // -moz-animation:fadeIn ease-in 1;
+  // animation:fadeIn ease-in 1;
+
+  // -webkit-animation-fill-mode:forwards;
+  // -moz-animation-fill-mode:forwards;
+  // animation-fill-mode:forwards;
+
+  // -webkit-animation-duration:1s;
+  // -moz-animation-duration:1s;
+  // animation-duration:1s;
+  //
+  -webkit-animation-delay: 4.5s;
+  -moz-animation-delay: 4.5s;
+  animation-delay: 4.5s;
+}
+
+
+
+
+// •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
 
 .button {
   background-color: $mainColor;
@@ -273,10 +381,6 @@ nav {
     }
 
 
-#logo-sub {
-  margin-left: 30px;
-}
-
 #profile-pic {
   height: 200px;
   border-radius: 100%;
@@ -360,6 +464,13 @@ div.interests-list {
 
 
 @media all and (max-width: 775px) {
+
+  #scroll-chevron {
+    bottom: -250px;
+  }
+
+
+
 
 // mobile nav menu dropdown
 $navHeight: 50px;
@@ -478,14 +589,13 @@ html {
     font-size: 42px;
   }
 
+}
 
 
 
 
-
-
-
-
-
-
+@media all and (max-width: 300px) {
+  #scroll-chevron {
+    bottom: -191px;
+  }
 }
