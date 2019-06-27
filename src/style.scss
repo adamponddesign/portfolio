@@ -594,8 +594,13 @@ html {
 
 
 
-@media all and (max-width: 300px) {
+@media all and (max-width: 420px) {
   #scroll-chevron {
-    bottom: -191px;
+    bottom: -150px;
+  }
+}
+@media all and (max-width: 320px) {
+  #scroll-chevron {
+    bottom: -130px;
   }
 }
