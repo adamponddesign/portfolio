@@ -10,7 +10,7 @@ $trimColor: #f15a24;
     src: local('League Spartan Bold'), url('LeagueSpartan-Bold.woff') format('woff');
 }
 
-
+// Global styling •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
 
 * {
   box-sizing: border-box;
@@ -21,12 +21,9 @@ $trimColor: #f15a24;
 html {
   /* Always force (mandatory) scrolling to a snap point on the y-axis */
   scroll-snap-type: y mandatory;
-
   scroll-behavior: smooth;
   scroll-padding-top: 55px;
 }
-
-
 
 h1 {
   font-family: 'League Spartan Bold';
@@ -34,20 +31,19 @@ h1 {
   font-size: 50px;
 }
 
-
-
 h2 {
   font-size: 30px;
   text-transform: uppercase;
   font-family: 'League Spartan Bold';
 }
+
 h3 {
   font-family: 'League Spartan Bold';
   text-transform: uppercase;
   font-size: 22px;
 }
+
 h4 {
-  // font-family: 'League Spartan Bold';
   text-transform: uppercase;
   font-size: 15px;
 }
@@ -71,13 +67,12 @@ a.contact-icons:visited  {
   }
 
 
-// landing page animations •••••••••••••••••••
-
+// landing page animations •••••••••••••••••••••••••••••••••••••••••••••••••••••••
 
 #name-home-hero {
   position :relative;
-  -webkit-animation: mymove 2s; /* Safari 4.0 - 8.0 */
-  animation: mymove 2s;
+  -webkit-animation: mymove 1.3s; /* Safari 4.0 - 8.0 */
+  animation: mymove 1.3s;
   line-height: 40px;
   // text-align: center;
 
@@ -106,9 +101,9 @@ a.contact-icons:visited  {
 }
 
 .anim-typewriter{
-  animation: typewriter 2.9s steps(20) 1 normal both,
+  animation: typewriter 2.2s steps(20) 1 normal both,
              blinkTextCursor 500ms steps(20) infinite normal;
-  animation-delay: 2s;
+  animation-delay: 1.2s;
 }
 
 @keyframes typewriter{
@@ -169,58 +164,23 @@ a.contact-icons:visited  {
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
 .fade-in {
-  // opacity:0;
-  // -webkit-animation:fadeIn ease-in 1;
-  // -moz-animation:fadeIn ease-in 1;
-  // animation:fadeIn ease-in 1;
-
-  // -webkit-animation-fill-mode:forwards;
-  // -moz-animation-fill-mode:forwards;
-  // animation-fill-mode:forwards;
-
-  // -webkit-animation-duration:1s;
-  // -moz-animation-duration:1s;
-  // animation-duration:1s;
-  //
-  -webkit-animation-delay: 4.5s;
-  -moz-animation-delay: 4.5s;
-  animation-delay: 4.5s;
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  animation-delay: 3s;
 }
-
-
-
 
 // •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
 
-.button {
-  background-color: $mainColor;
-  color: #fafafa;
-  margin: 5px;
-
-  font-size: 20px;
-  height: 1.7em;
-
-  span {
-    margin-left: 10px;
-    font-size: 16px;
-  }
-
-  &:hover {
-    color: white;
-    background-color:$trimColor;
-  }
-
-
-}
 
 
 
+// nav •••••••••••••••••••••••••••••••••••••••••••••••••••••••••
 
 
+// nav menu display none when large screen
 .skip {
   display: none;
 }
-
 
 nav {
   position: fixed;
@@ -235,9 +195,6 @@ nav {
   transition: transform 0.5s;
   font-family: 'League Spartan Bold';
   text-transform: uppercase;
-  // border-bottom: 2px solid $trimColor;
-
-
   -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
@@ -259,12 +216,9 @@ nav {
   }
 
   .nav-logo {
-
     max-width: 350px;
     margin-top: 15px;
     margin-left: 15px;
-    // font-size: 30px;
-    //
     a {
       color: white;
       padding: 0;
@@ -273,7 +227,6 @@ nav {
         border-top: none;
       }
     }
-
   }
 
   ul {
@@ -282,111 +235,80 @@ nav {
     margin: 0;
     li {
       display: inline;
-      // margin: 10px;
-
     }
   }
 }
 
 
+// About Section •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
 
+.about-headers {
+  text-align: center;
+}
 
+#about {
+  background-color: #fafafa;
+}
 
+#about-icons {
+  font-size: 42px;
+}
 
+#regex-image {
+  width: 72px;
+  height: 31px;
+}
 
-.footer {
-  padding: 2rem 1.5rem 2rem;
-  background-color: #272727;
+#codewars-image {
+  width: 55px;
+  height: 66px;
 }
 
 
 
 
-.tech-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 20px;
-  // justify-content: space-between;
-    .tech-icons {
-    font-size: 16px;
-    }
 
-    li {
-      display: flex;
-      flex-direction: column;
-      height: 105px;
-      color: #4a4a4a;
-      padding: 6px;
-      width: 105px;
-      margin: 2px;
-      text-align: center;
-      align-items: center;
-      justify-content: center;
-      font-size: 42px;
+// Projects section ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
 
-      img {
-        height: 42px;
-        color: #4a4a4a;
-      }
-    }
-}
-
-// a.contact-icons:hover {
-//   border-bottom: 4px solid $trimColor;
-//   border-top: 4px solid $trimColor;
-//   padding-top: 4px;
-//   padding-bottom: 4px;
-// }
-.contact-section {
-  // border-bottom: 2px solid $trimColor;
-  // border-top: 3px solid $trimColor;
+.project-paragraph {
+  padding-bottom: 10px;
 }
 
 .tech-icons-section {
   background-color: #fafafa;
-
 }
 
 .interests-section {
   background-color: $mainColor;
   color: white;
-  // border-top: 3px solid $trimColor;
 }
 
 .projects-section {
   background-color: white;
-  // border-top: 3px solid $trimColor;
-
 }
 
-.experience-section {
+
+.button {
   background-color: $mainColor;
-  // border-top: 3px solid $trimColor;
-  color: white;
+  color: #fafafa;
+  margin: 5px;
+
+  font-size: 20px;
+  height: 1.7em;
+
+  span {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+
+  &:hover {
+    color: white;
+    background-color:$trimColor;
+  }
 }
 
-#about {
-  // border-top: 3px solid $trimColor;
-  background-color: #fafafa;
-}
 
-
-
-  .contact-icons {
-      color: #4a4a4a;
-      padding: 6px;
-      margin: 4px;
-      font-size: 42px;
-    }
-
-
-#profile-pic {
-  height: 200px;
-  border-radius: 100%;
-  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.09);
-}
-
+// Experience section ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••¶
 #ga-logo {
   width: 350px;
   margin-top: 25px;
@@ -399,13 +321,62 @@ nav {
 .iphone-image {
   max-width: 80%;
 }
+.experience-section {
+  background-color: $mainColor;
+  color: white;
+}
+
+
+.tech-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+  .tech-icons {
+    font-size: 16px;
+  }
+  li {
+    display: flex;
+    flex-direction: column;
+    height: 105px;
+    color: #4a4a4a;
+    padding: 6px;
+    width: 105px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+
+    img {
+      height: 42px;
+      color: #4a4a4a;
+    }
+  }
+}
+
+
+// contact section ••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.contact-icons {
+  color: #4a4a4a;
+  padding: 6px;
+  margin: 4px;
+  font-size: 42px;
+}
+
+#profile-pic {
+  height: 200px;
+  border-radius: 100%;
+  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.09);
+}
 
 .button:focus {
   color: white;
 }
 
 
-
+// interests section •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
 div.interests-list {
   display: flex;
   flex-direction: row;
@@ -422,17 +393,16 @@ div.interests-list {
   font-size: 17px;
 }
 
-
-
-.project-paragraph {
-  padding-bottom: 10px;
-}
-
 .columns {
     margin-top: 0.75rem;
 }
 
 
+// footer •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+.footer {
+  padding: 2rem 1.5rem 2rem;
+  background-color: #272727;
+}
 
 
 
@@ -461,7 +431,7 @@ div.interests-list {
 
 
 
-
+// media queries ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
 
 @media all and (max-width: 775px) {
 
@@ -470,10 +440,8 @@ div.interests-list {
   }
 
 
-
-
-// mobile nav menu dropdown
-$navHeight: 50px;
+  // mobile nav menu dropdown
+  $navHeight: 50px;
 
   svg.svg-inline--fa.fa-chevron-down.fa-w-14 {
     font-size: 24px;
@@ -518,7 +486,6 @@ $navHeight: 50px;
     position: absolute;
     right: 0;
     top: $navHeight;
-    // transition: max-height 0.5s ease-in;
     transition: max-height 0.5s ease;
     padding: 0;
   }
@@ -538,19 +505,18 @@ $navHeight: 50px;
     border-bottom: 0;
     border-top: 0;
     padding: 15px 10px;
+  }
 
-}
+  // mobile nav dropdown hover highlight
+  #menu :hover {
+    background-color:$trimColor;
+  }
 
-// mobile nav dropdown hover highlight
-#menu :hover {
-  background-color:$trimColor;
-}
+  // •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
 
-// •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
-
-html {
-  scroll-padding-top: 50px;
-}
+  html {
+    scroll-padding-top: 50px;
+  }
 
   h1 {
     font-family: 'League Spartan Bold';
@@ -585,11 +551,11 @@ html {
     height: 95px;
     padding: 0;
     width: 95px;
-    margin: 0;
+    margin: 0 auto;
     font-size: 42px;
   }
 
-}
+}  // closing media q bracket
 
 
 

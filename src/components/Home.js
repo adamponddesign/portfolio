@@ -15,9 +15,12 @@ class Home extends React.Component {
               <span className="brackets">{'>'}</span>
             </h1>
             <h2 id="logo-sub" className="anim-typewriter">Full-Stack Developer</h2>
-            <div id="scroll-chevron" className="fade-in bounce">
-              <FontAwesomeIcon icon={faChevronDown} />
-            </div>
+
+            <a href="#about">
+              <div id="scroll-chevron" className="fade-in bounce">
+                <FontAwesomeIcon icon={faChevronDown} />
+              </div>
+            </a>
 
           </div>
         </div>
