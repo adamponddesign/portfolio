@@ -19,7 +19,7 @@ class About extends React.Component {
           </p>
           <hr />
 
-          <h3 className="about-headers">{'Currently Improving My Skills With'}</h3>
+          <h3 className="about-headers">{'Skills I\'m Currently Improving'}</h3>
           <ul className="tech-list">
             <li><FontAwesomeIcon icon={faReact} /><span className="tech-icons">React</span></li>
             <li><img id="codewars-image" src="https://i.imgur.com/jjsSPOM.png"/><span className="tech-icons">Codewars</span></li>
