@@ -14,7 +14,7 @@ class Home extends React.Component {
               <span>{'Adam Pond /'}</span>
               <span className="brackets">{'>'}</span>
             </h1>
-            <h2 id="logo-sub" className="anim-typewriter">Full-Stack Developer</h2>
+            <h2 id="logo-sub" className="anim-typewriter">Web Developer</h2>
 
             <a href="#about">
               <div id="scroll-chevron" className="fade-in bounce">

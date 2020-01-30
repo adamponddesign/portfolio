@@ -52,10 +52,14 @@ hr {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(196, 196, 196), rgba(0, 0, 0, 0));
+
+    &.experience-hr {
+      background: $trimColor;
+    }
 }
 
 .text-color {
-  color: #f15a24;
+  color: $trimColor;
   font-size: 1em;
 }
 .section {
@@ -101,14 +105,13 @@ a.contact-icons:visited  {
 }
 
 .anim-typewriter{
-  animation: typewriter 2.2s steps(20) 1 normal both,
-             blinkTextCursor 500ms steps(20) infinite normal;
+  animation: typewriter 2.2s steps(13) 1 normal both, blinkTextCursor 500ms steps(20) infinite normal;
   animation-delay: 1.2s;
 }
 
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 13em;}
+  to{width: 9em;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: $trimColor;}
@@ -254,9 +257,13 @@ nav {
   font-size: 42px;
 }
 
-#regex-image {
-  width: 72px;
-  height: 31px;
+#svelte-image {
+  height: 44px;
+}
+
+#new-text {
+  margin-top: 0.6rem;
+  width: 7rem;
 }
 
 #codewars-image {
@@ -311,7 +318,12 @@ nav {
 // Experience section ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••¶
 #ga-logo {
   width: 350px;
-  margin-top: 25px;
+  // margin-top: 25px;
+}
+
+#edmiston-logo {
+  width: 350px;
+
 }
 
 .imac-image {
@@ -350,7 +362,6 @@ nav {
 
     img {
       height: 42px;
-      color: #4a4a4a;
     }
   }
 }
@@ -541,6 +552,10 @@ div.interests-list {
   }
 
   #ga-logo {
+    width: 200px;
+    margin-top: 25px;
+  }
+  #edmiston-logo {
     width: 200px;
     margin-top: 25px;
   }

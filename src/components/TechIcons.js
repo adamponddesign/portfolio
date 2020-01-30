@@ -16,6 +16,7 @@ class TechIcons extends React.Component {
 
             <li><FontAwesomeIcon icon={faReact} /><span className="tech-icons">React</span></li>
             <li><FontAwesomeIcon icon={faJs} /><span className="tech-icons">JavaScript</span></li>
+            <li><img src="https://i.imgur.com/qNnvpgV.png"/><span className="tech-icons">Svelte</span></li>
             <li><FontAwesomeIcon icon={faPython} /><span className="tech-icons">Python</span></li>
             <li><FontAwesomeIcon icon={faHtml5} /><span className="tech-icons">HTML5</span></li>
             <li><FontAwesomeIcon icon={faCss3Alt} /><span className="tech-icons">CSS3</span></li>

@@ -28,7 +28,7 @@ class About extends React.Component {
           </ul>
           <h3 className="about-headers">{'New Things I\'m Learning'}</h3>
           <ul className="tech-list">
-            <li><img id="regex-image" src="https://i.imgur.com/ExQtR9N.png"/><span className="tech-icons">Regular Expressions</span></li>
+            <li><img id="svelte-image" src="https://i.imgur.com/qNnvpgV.png"/><span id="new-text" className="tech-icons">Svelte / Sapper</span></li>
 
           </ul>
 
