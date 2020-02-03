@@ -32,6 +32,7 @@ class TechIcons extends React.Component {
             <li><FontAwesomeIcon icon={faYarn} /><span className="tech-icons">yarn</span></li>
             <li><i className="devicon-atom-original"></i><span className="tech-icons">Atom</span></li>
             <li><img src="https://i.imgur.com/oRBJkaQ.png"/><span className="tech-icons">Bulma</span></li>
+            <li><img src="https://i.imgur.com/txJ4zSg.png"/><span className="tech-icons">PrinceXML</span></li>
             <li><i className="devicon-heroku-original"></i><span className="tech-icons">Heroku</span></li>
             <li><i className="devicon-slack-plain"></i><span className="tech-icons">Slack</span></li>
             <li><FontAwesomeIcon icon={faTrello} /><span className="tech-icons">Trello</span></li>

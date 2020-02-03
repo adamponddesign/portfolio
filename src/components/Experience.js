@@ -16,16 +16,16 @@ class Experience extends React.Component {
             </div>
 
             <div className="column">
-              <h3>Internship</h3>
+              <h3>Project</h3>
               <p className="text-color">Nov 2019 - Jan 2020</p>
               <p>I was tasked with exploring the possibility of applying Svelte and Sapper to some of the 
-                internal team systems at Edmiston.  I enjoyed researching these new technologies and I also 
-                learnt a lot from the senior developer on the team about manipulating data from the company database.  
-                I was able to present four separate projects to the company for consideration at the end of my internship.</p>
-              <hr />
+                internal team systems at Edmiston.  I enjoyed researching these new technologies and also 
+                learnt a lot about manipulating data from the company database.  
+                I was able to present four separate projects to the team for consideration at the end of my internship.</p>
+              {/* <hr />
               <h4>Paul Hage</h4>
               <p className="text-color">Director of Technology at Edmiston</p>
-              <p>{'"Adam was a pleasure to work with. He has a great mentality for programming and always rose to every challenge set. I am sure he has a great future ahead as a web developer."'}</p>
+              <p>{'"Adam was a pleasure to work with. He has a great mentality for programming and always rose to every challenge set. I am sure he has a great future ahead as a web developer."'}</p> */}
 
             </div>
 

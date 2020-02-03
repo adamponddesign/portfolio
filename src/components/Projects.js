@@ -15,13 +15,37 @@ class Projects extends React.Component {
       <div id="projects" className="section projects-section">
         <div className="container">
           <h2>{'<Projects />'}</h2>
-          {/* Progress Pro */}
-          <div className="columns is-vcentered has-text-centered" >
-            <div className="column is-two-thirds">
 
-              <img className="apple-items" src="https://i.imgur.com/hBh3x9n.png" />
+
+          <div className="columns is-vcentered has-text-centered" >
+            <div className="column">
+
+              <h3>Edmiston</h3>
+              <p className="project-paragraph">
+              Developed fully responsive intranet designs using the very latest technologies. 
+              
+              </p>
+              <p className="text-color">JavaScript(ES6) | Svelte | Sapper | Rollup | Webpack | HTML5 | SCSS | Bulma </p>
+
+             
 
             </div>
+            <div className="column is-two-thirds edmiston">
+
+              <img className="edmiston-images" src="https://i.imgur.com/SLDL3al.jpg" />
+              <img className="edmiston-images" src="https://i.imgur.com/vcaBx8j.jpg" />
+              <img className="edmiston-images" src="https://i.imgur.com/uMPF6rE.jpg" />
+
+            </div>
+          </div>
+          
+
+
+
+
+          <hr />
+
+          <div className="columns is-vcentered has-text-centered" >
             <div className="column">
 
               <h3>Progress Pro</h3>
@@ -31,12 +55,6 @@ class Projects extends React.Component {
               Python/Flask/PostgreSQL back-end and a React front-end utilising Webpack.
               </p>
               <p className="text-color">JavaScript(ES6) | Python3 | React | Webpack | PostgreSQL | Flask | Ajax | HTML5 | Bulma | SCSS | GitHub</p>
-
-
-
-
-
-
 
               <a className="button" href="https://github.com/adamponddesign/progress-pro" target="_blank" rel="noopener noreferrer" >
                 <FontAwesomeIcon icon={faGithub} />
@@ -48,14 +66,18 @@ class Projects extends React.Component {
               </a>
 
             </div>
-          </div>
-          <hr />
-          <div className="columns is-vcentered has-text-centered" >
             <div className="column is-two-thirds">
 
-              <img className="imac-image" src="https://i.imgur.com/XDEWOpK.png" />
+              <img className="apple-items" src="https://i.imgur.com/hBh3x9n.png" />
 
             </div>
+          </div>
+
+
+          <hr />
+
+
+          <div className="columns is-vcentered has-text-centered" >
             <div className="column">
 
               <h3>After Midnight</h3>
@@ -72,15 +94,15 @@ class Projects extends React.Component {
               </a>
 
             </div>
+            <div className="column is-two-thirds">
+
+              <img className="imac-image" src="https://i.imgur.com/XDEWOpK.png" />
+
+            </div>
           </div>
           <hr />
 
           <div className="columns is-vcentered has-text-centered" >
-            <div className="column is-two-thirds">
-
-              <img className="imac-image" src="https://i.imgur.com/6lk3WkJ.png" />
-
-            </div>
             <div className="column">
 
               <h3>London Trains Info</h3>
@@ -100,15 +122,15 @@ class Projects extends React.Component {
               </a>
 
             </div>
+            <div className="column is-two-thirds">
+
+              <img className="imac-image" src="https://i.imgur.com/6lk3WkJ.png" />
+
+            </div>
           </div>
           <hr />
 
           <div className="columns is-vcentered has-text-centered" >
-            <div className="column is-two-thirds">
-
-              <img className="iphone-image" src="https://i.imgur.com/yOC2TtT.png" />
-
-            </div>
             <div className="column">
 
               <h3>Mastermind</h3>
@@ -125,6 +147,11 @@ class Projects extends React.Component {
                 <FontAwesomeIcon icon={faLink} />
                 <span>View live Site</span>
               </a>
+
+            </div>
+            <div className="column is-two-thirds">
+
+              <img className="iphone-image" src="https://i.imgur.com/yOC2TtT.png" />
 
             </div>
           </div>
