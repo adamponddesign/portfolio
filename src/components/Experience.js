@@ -16,12 +16,12 @@ class Experience extends React.Component {
             </div>
 
             <div className="column">
-              <h3>Project</h3>
+              <h3>Svelte Project</h3>
               <p className="text-color">Nov 2019 - Jan 2020</p>
               <p>I was tasked with exploring the possibility of applying Svelte and Sapper to some of the 
                 internal team systems at Edmiston.  I enjoyed researching these new technologies and also 
                 learnt a lot about manipulating data from the company database.  
-                I was able to present four separate projects to the team for consideration at the end of my internship.</p>
+                I was able to present four separate projects to the team for consideration at the end of the three month period.</p>
               {/* <hr />
               <h4>Paul Hage</h4>
               <p className="text-color">Director of Technology at Edmiston</p>

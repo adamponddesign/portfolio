@@ -23,6 +23,7 @@ class Projects extends React.Component {
               <h3>Edmiston</h3>
               <p className="project-paragraph">
               Developed fully responsive intranet designs using the very latest technologies. 
+              Designs incorporated brand fonts/colours and included animations, image overlays, tables, bespoke swipe galleries and an employee search / filter.
               
               </p>
               <p className="text-color">JavaScript(ES6) | Svelte | Sapper | Rollup | Webpack | HTML5 | SCSS | Bulma </p>
