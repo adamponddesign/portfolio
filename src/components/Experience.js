@@ -22,10 +22,10 @@ class Experience extends React.Component {
                 internal team systems at Edmiston.  I enjoyed researching these new technologies and also 
                 learnt a lot about manipulating data from the company database.  
                 I was able to present four separate projects to the team for consideration at the end of the three month period.</p>
-              {/* <hr />
-              <h4>Paul Hage</h4>
-              <p className="text-color">Director of Technology at Edmiston</p>
-              <p>{'"Adam was a pleasure to work with. He has a great mentality for programming and always rose to every challenge set. I am sure he has a great future ahead as a web developer."'}</p> */}
+              <hr />
+              <h4>Michael Kane</h4>
+              <p className="text-color">Systems Architect at Edmiston</p>
+              <p>{'"Adam is a focused, talented and creative individual who exceeded our expectations in delivering multiple front-end projects in a relatively short period of time. I would not hesitate to recommend his services, it was a pleasure to work together."'}</p>
 
             </div>
 
